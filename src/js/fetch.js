@@ -34,11 +34,11 @@ export async function getImage({ searchQuery, page, perPage }) {
     refs.gallery.innerHTML += imagesHTML;
 
     if (refs.gallery.children.length >= totalHits) {
-      refs.loaderMore.classList.add('visible');
+      refs.loaderMore.classList.remove('visible');
       refs.gallery.innerHTML +=
         '<p class="end-results">We\'re sorry, but you\'ve reached the end of search results.</p>';
     } else {
-      refs.loaderMore.classList.remove('visible');
+      refs.loaderMore.classList.add('visible');
     }
 
     lightbox.refresh();
