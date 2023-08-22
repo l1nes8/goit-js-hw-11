@@ -26,6 +26,7 @@ export async function getImage({ searchQuery, page, perPage }) {
       Notiflix.Notify.failure(
         'Sorry, there are no images matching your search query. Please try again.'
       );
+      refs.loaderMore.classList.remove('visible');
       return;
     }
 
