@@ -39,6 +39,7 @@ export async function getImage({ searchQuery, page, perPage }) {
       refs.gallery.innerHTML +=
         '<p class="end-results">We\'re sorry, but you\'ve reached the end of search results.</p>';
     } else {
+      Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
       refs.loaderMore.classList.add('visible');
     }
 
