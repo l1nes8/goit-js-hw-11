@@ -38,6 +38,51 @@ img {
   height: auto;
 }
 
+.input {
+  margin-bottom: 8px;
+  padding: 4;
+
+  border: 1px solid #000;
+  border-radius: 4px;
+  outline: 0px solid transparent;
+}
+
+
+
+.btn-submit {
+  display: block;
+
+  background-color: #4d5ae5;;
+  color: #fff;
+
+  margin-bottom: 4px;
+  padding: 6 10;
+  
+  border-radius: 4px;
+  border-color: transparent;
+  
+  transition: background-color 500ms  cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit:hover, .btn-submit:focus {
+  background-color: #323a94;
+}
+
+.load-more {
+  background-color: #4d5ae5;;
+  color: #fff;
+
+  padding: 6 10;
+
+  border-radius: 4px;
+  border-color: transparent;
+
+  transition: background-color 500ms  cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
+.load-more:hover, .load-more:focus {
+  background-color: #323a94;
+}
 .photo-card {
   width: 300px;
 }
